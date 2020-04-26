@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> </title>
+    <!-- Facebook iframe embed  -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@divevr">
+    <meta name="twitter:title" content="Miradas 360 - 
+    Historias Inmersivas Colaborativas y Abiertas">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg">
+    <meta name="twitter:player" content="http://www.miradas360.com.ar">
+    <meta name="twitter:player:width" content="600">
+    <meta name="twitter:player:height" content="370">
+    
+    <meta property="og:title" content="Miradas 360 - 
+    Historias Inmersivas Colaborativas y Abiertas">
+    <meta property="og:url"  content="http://www.miradas360.com.ar">
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="video" />
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg" />
+    <meta property="og:image:seucre_url" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg" />
+     
+    <meta property="og:type" content="video" />
+    <meta property="og:video:url" content="http://miradas360.com.ar/">
+    <meta property="og:video:secure_url" content="http://miradas360.com.ar/">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+     <meta property="og:video:url" content="index.html">
+    <meta property="og:video:secure_url" content="http://miradas360.com.ar">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta name="description" content="Explorá lugares que merecen ser vistos, explorados y atravesados por una historia.">
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script src="components/set-image.js"></script>
+    <script src="components/hide-show-teleports.js"></script>
+    <script src="components/sprite-animation.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900" rel="stylesheet">
+<style>
+html{
+  font-family: 'Poppins', sans-serif;
+
+}
+.logos{
+      width: 100%;
+}
+.logos img{
+    display: inline-flex;
+    max-width: 85px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+h1{
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+.wrapper {
+  z-index: 300000;
+  background: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#wrapper::after{
+    content: "";
+    background-image: url(/images/cover.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+div.inner {
+    padding: 2em;
+    text-align: center;
+    color: white;
+    background: #1d171796;
+}
+a{
+   font-family: 'Poppins', sans-serif;
+   color: white;
+    text-decoration: underline;
+}
+a.button, button{
+  cursor: pointer;
+  font-size: 2em;
+   font-family: 'Poppins', sans-serif;
+   color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+  /*height: 20px;
+    width: 100px;*/
+    margin: auto 0;
+    position: relative;
+}
+#arjsDebugUIContainer, .arjsDebugUIContainer, .a-enter-vr {
+  display: none;
+}
+</style>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene>
+      <a-assets>
+        
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        
+
+
+
+        <img id="scene01" crossorigin="anonymous" src="scenes/1-entrada-salida.jpg">
+        <img id="scene02" crossorigin="anonymous" src="scenes/2-barra-comedor.jpg">
+        <img id="scene03" crossorigin="anonymous" src="scenes/3-tv-comedor.jpg">
+        <img id="scene04" crossorigin="anonymous" src="scenes/4-ventana-balcon.jpg">
+        <img id="scene05" crossorigin="anonymous" src="scenes/5-balcon-frente.jpg">
+        <img id="scene06" crossorigin="anonymous" src="scenes/6-cocina.jpg">
+        <img id="scene07" crossorigin="anonymous" src="scenes/7-pasillo-baño.jpg">
+        <audio id="audio01" crossorigin="anonymous" src="audios/.mp3"> 
+        <audio id="soundtrack" autoplay="true" crossorigin="anonymous" src="audios/.mp3"> 
+        
+        <!-- Image link template to be reused. -->
+        <script id="link" type="text/html">
+          <a-entity sprite-animation class=" link classRoom" look-at="[camera]" 
+            event-set__1="_event: mousedown; scale: 1 1 1"
+            event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+            event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+            event-set__4="_event: mouseleave; scale: 1 1 1"
+            set-image="on: click; target: #image-360; src: ${src}"
+            hide-show-teleports="on: click; teleports: ${thumb}"
+            sound="on: click; src: #click-sound"></a-entity>
+        </script>
+      </a-assets>
+
+
+      <!-- 360-degree image. -->
+      <a-sky id="image-360" radius="10" src="#scene01" color="white"></a-sky>
+      <!-- Miradas Logo -->
+      
+      <a-entity class="teleport" id="teleport-01-02" look-at="[camera]" position="0 0 8.17" rotation="0 123 4" scale="1.5 1.5 1.5"
+      template="src: #link" data-src="#scene02" data-thumb="02-03,02-01"
+      ></a-entity>
+
+      <a-entity class="teleport" id="teleport-02-03" look-at="[camera]" position="-8.66 2.5 0.83" rotation="0 -90 4" scale="1.5 1.5 1.5" 
+      template="src: #link" data-src="#scene03" data-thumb="03-05"></a-entity>
+      
+      <a-entity class="teleport" id="teleport-02-01" look-at="[camera]" position="6 0 8.17" rotation="0 0 0" scale="1.5 1.5 1.5"
+      template="src: #link" data-src="#scene01" data-thumb="01-02"></a-entity>
+      
+      <a-entity class="teleport" id="teleport-03-05" look-at="[camera]" position="-6 1.71 -4.80" rotation="3.44 -117 4" scale="1.5 1.5 1.5"
+      template="src: #link" data-src="#scene05" data-thumb="05-06"></a-entity>
+      <a-entity class="teleport" id="teleport-05-06" look-at="[camera]" position="-7.60 0 6.69" rotation="3.44 -48 4" scale="2 2 2"
+      template="src: #link" data-src="#scene06" data-thumb="06-07"></a-entity>
+      <a-entity class="teleport" id="teleport-06-07" look-at="[camera]" position="5.39 -0.8 7.56" rotation="0 55.58 0" scale="2 2 2"
+      template="src: #link" data-src="#scene07" data-thumb="07-08"></a-entity>
+
+      <a-entity class="teleport" id="teleport-07-08" look-at="[camera]" position="5.39 2 7.56" rotation="0 55.58 0" scale="2 2 2"
+      template="src: #link" data-src="#scene08" data-thumb="#cta-move"></a-entity>
+
+
+       <div id="wrapper" class="wrapper">
+      <div class="inner">
+        <h1> Garcia Propiedades </h1>
+        <h5> Departamento Av. de Mayo 2020 4 A</h5>
+        <p> Explorá esta prioridad desde tu hogar con tu telefono.</p>
+        <button type="button" onClick="start(this.parentNode.parentNode)">Empezar</button>
+        
+      </div>
+    </div>
+     
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls >
+        <a-cursor id="cursor"
+          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+          event-set__1="_event: mouseenter; color: springgreen"
+          event-set__2="_event: mouseleave; color: black"
+          fuse="true"></a-cursor>
+      </a-entity>
+    </a-scene>
+    <script src="components/main.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
