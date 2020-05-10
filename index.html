@@ -29,8 +29,8 @@
      
     <meta name="description" content="Explorá lugares que merecen ser vistos, explorados y atravesados por una historia.">
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
-    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script> -->
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
@@ -140,7 +140,7 @@ a.button, button{
         <img id="scene15" crossorigin="anonymous" src="scenes/15-fin-patio.jpg">
         
 
-        <audio id="audio01"  autoplay="true" crossorigin="anonymous" src="audios/ambiente-casa-garcia-comedor.mp3"> 
+        <audio id="audio01" loop="true" autoplay="true" crossorigin="anonymous" src="audios/ambiente-casa-garcia-comedor.mp3"> 
         <audio id="soundtrack" autoplay="true" crossorigin="anonymous" src="audios/.mp3"> 
         
         <!-- Image link template to be reused. -->
@@ -169,7 +169,7 @@ a.button, button{
       template="src: #link" data-src="#scene06" data-thumb="06-01,06-03,06-07"
       ></a-entity>
 
-        <a-entity class="teleport" id="teleport-01-03" look-at="[camera]" position="2.03 -1.19 -3.37" rotation="0 0 4" scale="1 1 1 "
+        <a-entity class="teleport" id="teleport-01-03" look-at="[camera]" position="2.03 0 -3.37" rotation="0 0 4" scale="1 1 1 "
       template="src: #link" data-src="#scene03" data-thumb="03-01,03-05"
       ></a-entity>
 
@@ -201,41 +201,41 @@ a.button, button{
       template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
 
-      <a-entity class="teleport" id="teleport-07-09" look-at="[camera]" position="-3.56 0.61 -6.11" rotation="0 45 0" scale="1.5 1.5 1.5" 
+      <a-entity class="teleport" id="teleport-07-09" look-at="[camera]" position="-3.56 0 -6.11" rotation="0 45 0" scale="1.5 1.5 1.5" 
       template="src: #link" data-src="#scene09" data-thumb="09-07"></a-entity>
       
-       <a-entity class="teleport" id="teleport-07-01" look-at="[camera]" position="-0.17 -2.50 9.08" rotation="0 0 0" scale="1.5 1.5 1.5" 
+       <a-entity class="teleport" id="teleport-07-01" look-at="[camera]" position="-0.17 0 9.08" rotation="0 0 0" scale="1.5 1.5 1.5" 
        template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03"></a-entity>
       
-      <a-entity class="teleport" id="teleport-07-10" look-at="[camera]" position="-0.97 -2.37 -7.72" rotation="0 0 0" scale="1.5 1.5 1.5"
+      <a-entity class="teleport" id="teleport-07-10" look-at="[camera]" position="-0.97 0 -7.72" rotation="0 0 0" scale="1.5 1.5 1.5"
       template="src: #link" data-src="#scene10" data-thumb="10-07,10-11"></a-entity>
       
-      <a-entity class="teleport" id="teleport-09-07" look-at="[camera]" position="-0.64 0.4 -3.7" rotation="0 0 0" scale="1 1 1 "
+      <a-entity class="teleport" id="teleport-09-07" look-at="[camera]" position="-0.64 0 -3.7" rotation="0 0 0" scale="1 1 1 "
       template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
 
 
-        <a-entity class="teleport" id="teleport-10-07" look-at="[camera]" position="3.55 0.23 8.20" rotation="0 0 0" scale="1 1 1 "
+        <a-entity class="teleport" id="teleport-10-07" look-at="[camera]" position="3.55 0 8.20" rotation="0 0 0" scale="1 1 1 "
       template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
 
-      <a-entity class="teleport" id="teleport-10-11" look-at="[camera]" position="1.64 0.4 -3.7" rotation="0 0 0" scale="1 1 1 "
+      <a-entity class="teleport" id="teleport-10-11" look-at="[camera]" position="1.64 0 -3.7" rotation="0 0 0" scale="1 1 1 "
       template="src: #link" data-src="#scene11" data-thumb="11-10"
       ></a-entity>
 
-        <a-entity class="teleport" id="teleport-11-10" look-at="[camera]" position="7.89 0.23 -3.40" rotation="0 90 0" scale="1 1 1 "
+        <a-entity class="teleport" id="teleport-11-10" look-at="[camera]" position="7.89 0 -3.40" rotation="0 90 0" scale="1 1 1 "
       template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
 
 
-      <a-entity class="teleport" id="teleport-03-05" look-at="[camera]" position="-6 1.71 -4.80" rotation="3.44 -117 4" scale="1.5 1.5 1.5"
+      <a-entity class="teleport" id="teleport-03-05" look-at="[camera]" position="-6 0 -4.80" rotation="3.44 -117 4" scale="1.5 1.5 1.5"
       template="src: #link" data-src="#scene05" data-thumb="05-06"></a-entity>
       <a-entity class="teleport" id="teleport-05-06" look-at="[camera]" position="-7.60 0 6.69" rotation="3.44 -48 4" scale="2 2 2"
       template="src: #link" data-src="#scene06" data-thumb="06-07"></a-entity>
-      <a-entity class="teleport" id="teleport-06-07" look-at="[camera]" position="5.39 -0.8 7.56" rotation="0 55.58 0" scale="2 2 2"
+      <a-entity class="teleport" id="teleport-06-07" look-at="[camera]" position="5.39 0 7.56" rotation="0 55.58 0" scale="2 2 2"
       template="src: #link" data-src="#scene07" data-thumb="07-08"></a-entity>
 
-      <a-entity class="teleport" id="teleport-07-08" look-at="[camera]" position="5.39 2 7.56" rotation="0 55.58 0" scale="2 2 2"
+      <a-entity class="teleport" id="teleport-07-08" look-at="[camera]" position="5.39 0 7.56" rotation="0 55.58 0" scale="2 2 2"
       template="src: #link" data-src="#scene08" data-thumb="#cta-move"></a-entity>
 
 
@@ -251,12 +251,7 @@ a.button, button{
      
       <!-- Camera + cursor. -->
       <a-entity camera look-controls >
-        <a-cursor id="cursor"
-          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
-          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: black"
-          fuse="true"></a-cursor>
+        
       </a-entity>
     </a-scene>
     <script src="components/main.js"></script>
