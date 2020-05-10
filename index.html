@@ -143,6 +143,16 @@ a.button, button{
         <img id="scene05" crossorigin="anonymous" src="scenes/5-balcon-frente.jpg">
         <img id="scene06" crossorigin="anonymous" src="scenes/6-cocina.jpg">
         <img id="scene07" crossorigin="anonymous" src="scenes/7-pasillo-baño.jpg">
+        <img id="scene08" crossorigin="anonymous" src="scenes/8-puerta-baño-dormitorio.jpg">
+        <img id="scene09" crossorigin="anonymous" src="scenes/9-baño.jpg">
+        <img id="scene10" crossorigin="anonymous" src="scenes/10-dormitorio.jpg">
+        <img id="scene11" crossorigin="anonymous" src="scenes/11-ventana-dormitorio.jpg">
+        <img id="scene12" crossorigin="anonymous" src="scenes/12-lavadero-hacia-arriba.jpg">
+        <img id="scene13" crossorigin="anonymous" src="scenes/13-puerta-patio-bacha.jpg">
+        <img id="scene14" crossorigin="anonymous" src="scenes/14-patio.jpg">
+        <img id="scene15" crossorigin="anonymous" src="scenes/15-fin-patio.jpg">
+        
+
         <audio id="audio01" crossorigin="anonymous" src="audios/.mp3"> 
         <audio id="soundtrack" autoplay="true" crossorigin="anonymous" src="audios/.mp3"> 
         
@@ -164,15 +174,18 @@ a.button, button{
       <a-sky id="image-360" radius="10" src="#scene01" color="white"></a-sky>
       <!-- Miradas Logo -->
       
-      <a-entity class="teleport" id="teleport-01-02" look-at="[camera]" position="0 0 8.17" rotation="0 123 4" scale="1.5 1.5 1.5"
-      template="src: #link" data-src="#scene02" data-thumb="02-03,02-01"
+      <a-entity class="teleport" id="teleport-01-02" look-at="[camera]" position="-0.5 0 10" rotation="0 0 4" scale="1 1 1 "
+      template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
 
-      <a-entity class="teleport" id="teleport-02-03" look-at="[camera]" position="-8.66 2.5 0.83" rotation="0 -90 4" scale="1.5 1.5 1.5" 
-      template="src: #link" data-src="#scene03" data-thumb="03-05"></a-entity>
+      <a-entity class="teleport" id="teleport-07-09" look-at="[camera]" position="-3.56 0.61 -6.11" rotation="0 45 0" scale="1.5 1.5 1.5" 
+      template="src: #link" data-src="#scene09" data-thumb="09-07"></a-entity>
       
-      <a-entity class="teleport" id="teleport-02-01" look-at="[camera]" position="6 0 8.17" rotation="0 0 0" scale="1.5 1.5 1.5"
-      template="src: #link" data-src="#scene01" data-thumb="01-02"></a-entity>
+       <a-entity class="teleport" id="teleport-07-01" look-at="[camera]" position="-0.17 -2.50 9.08" rotation="0 0 0" scale="1.5 1.5 1.5" 
+       template="src: #link" data-src="#scene01" data-thumb="09-07"></a-entity>
+      
+      <a-entity class="teleport" id="teleport-07-10" look-at="[camera]" position="-0.97 -2.37 -7.72" rotation="0 0 0" scale="1.5 1.5 1.5"
+      template="src: #link" data-src="#scene10" data-thumb="09-07"></a-entity>
       
       <a-entity class="teleport" id="teleport-03-05" look-at="[camera]" position="-6 1.71 -4.80" rotation="3.44 -117 4" scale="1.5 1.5 1.5"
       template="src: #link" data-src="#scene05" data-thumb="05-06"></a-entity>
