@@ -16,25 +16,25 @@
   function start(element) {
     element.parentNode.removeChild(element);
     // document.getElementById("soundtrack").play();
-    for (var i = 0; i < videos.length; i++) {
-      var id = videos[i];
-        var v = document.getElementById(id);
-        v.play();
-        // v.pause();
-          // (function(vid,id,i){
-          //   document.getElementById(id+ '-marker').addEventListener('marker-found', function(e){ 
-          //      vid.play();
-          //      vid.onended = function(e) {
-          //        checkOpenYoutube()
-          //     };
-          //      played[i] = true;
-          //   });
-          //   document.getElementById(id+'-marker').addEventListener('marker-lost', function(e){ 
-          //     vid.pause();
+    // for (var i = 0; i < videos.length; i++) {
+    //   var id = videos[i];
+    //     var v = document.getElementById(id);
+    //     v.play();
+    //     // v.pause();
+    //       // (function(vid,id,i){
+    //       //   document.getElementById(id+ '-marker').addEventListener('marker-found', function(e){ 
+    //       //      vid.play();
+    //       //      vid.onended = function(e) {
+    //       //        checkOpenYoutube()
+    //       //     };
+    //       //      played[i] = true;
+    //       //   });
+    //       //   document.getElementById(id+'-marker').addEventListener('marker-lost', function(e){ 
+    //       //     vid.pause();
 
-          //   });
-          // })(v,id,i);
-    }
+    //       //   });
+    //       // })(v,id,i);
+    // }
 
     
 
