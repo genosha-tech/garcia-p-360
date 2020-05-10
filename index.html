@@ -30,10 +30,10 @@
     <meta name="description" content="Explorá lugares que merecen ser vistos, explorados y atravesados por una historia.">
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!-- <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script> -->
-    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+     <!-- <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>  -->
+    <script src="scripts/aframe-event-set-component.min.js"></script>
+    <script src="scripts/aframe-layout-component.min.js"></script>
+    <script src="scripts/aframe-template-component.min.js"></script>
     <script src="components/set-image.js"></script>
     <script src="components/hide-show-teleports.js"></script>
     <script src="components/sprite-animation.js"></script>
@@ -140,8 +140,8 @@ a.button, button{
         <img id="scene15" crossorigin="anonymous" src="scenes/15-fin-patio.jpg">
         
 
-        <audio id="audio01" loop="true" autoplay="true" crossorigin="anonymous" src="audios/ambiente-casa-garcia-comedor.mp3"> 
-        <audio id="soundtrack" autoplay="true" crossorigin="anonymous" src="audios/.mp3"> 
+        <!-- <audio id="audio01" loop="true" autoplay="true" crossorigin="anonymous" src="audios/ambiente-casa-garcia-comedor.mp3"> 
+        <audio id="soundtrack" autoplay="true" crossorigin="anonymous" src="audios/.mp3">  -->
         
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
@@ -252,6 +252,15 @@ a.button, button{
       <!-- Camera + cursor. -->
       <a-entity camera look-controls >
         
+
+          <a-entity
+  animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+  animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
+  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
+  cursor="fuse: true;"
+  material="color: black; shader: flat"
+  position="0 1 -8"
+  geometry="primitive: ring"></a-entity>
       </a-entity>
     </a-scene>
     <script src="components/main.js"></script>

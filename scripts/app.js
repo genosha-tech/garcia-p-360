@@ -15,7 +15,7 @@
     }
   function start(element) {
     element.parentNode.removeChild(element);
-    document.getElementById("soundtrack").play();
+    // document.getElementById("soundtrack").play();
     for (var i = 0; i < videos.length; i++) {
       var id = videos[i];
         var v = document.getElementById(id);
