@@ -12,7 +12,7 @@ AFRAME.registerComponent('set-image', {
     target: {type: 'selector'},
     src: {type: 'string'},
     teleports: {type: 'string'},
-    dur: {type: 'number', default: 300}
+    dur: {type: 'number', default: 750}
   },
 
   init: function () {
