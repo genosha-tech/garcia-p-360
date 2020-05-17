@@ -12,7 +12,7 @@ AFRAME.registerComponent('hide-show-teleports', {
     target: {type: 'selector'},
     src: {type: 'string'},
     teleports: {type: 'string'},
-    dur: {type: 'number', default: 300}
+    dur: {type: 'number', default: 500}
   },
 
   init: function () {
@@ -26,13 +26,13 @@ AFRAME.registerComponent('hide-show-teleports', {
       for (var i = 0; i < toHide.length; i++) {
         toHide[i].setAttribute("visible",false);
       }
-      for (var i = 0; i < teleports.length; i++) {
-        var id = 'teleport-' +teleports[i];
-        document.getElementById(id).setAttribute("visible",true);
-      }
       window.currentMove = data.src.replace('#','') ;
       setTimeout(function () {
-        
+        for (var i = 0; i < teleports.length; i++) {
+          var id = 'teleport-' +teleports[i];
+          document.getElementById(id).setAttribute("visible",true);
+        }
+      
       }, data.dur);
     });
   }
