@@ -19,16 +19,17 @@ AFRAME.registerComponent('set-image', {
     var data = this.data;
     var el = this.el;
 
-    // this.setupFadeAnimation();
+    this.setupFadeAnimation();
 
     el.addEventListener(data.on, function () {
       // Fade out image.
       data.target.emit('set-image-fade');
+      data.target.setAttribute('material', 'src', data.src);
       // Wait for fade to complete.
       window.currentMove = data.src.replace('#','') ;
       setTimeout(function () {
         // Set image.
-        data.target.setAttribute('material', 'src', data.src);
+        
       }, data.dur);
     });
   },
@@ -45,13 +46,13 @@ AFRAME.registerComponent('set-image', {
     targetEl.dataset.setImageFadeSetup = true;
 
     // Create animation.
-    // targetEl.setAttribute('animation__fade', {
-    //   property: 'material.color',
-    //   startEvents: 'set-image-fade',
-    //   dir: 'alternate',
-    //   dur: data.dur,
-    //   from: '#FFF',
-    //   to: '#000'
-    // }); 
+    targetEl.setAttribute('animation__fade', {
+      property: 'opacity',
+      startEvents: 'set-image-fade',
+      dir: 'alternate',
+      dur: data.dur,
+      from: '0',
+      to: '1'
+    }); 
   }
 });

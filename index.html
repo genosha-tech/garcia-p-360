@@ -10,25 +10,22 @@
     <title> </title>
     <!-- Facebook iframe embed  -->
     <meta name="twitter:card" content="player">
-    <meta name="twitter:site" content="@divevr">
-    <meta name="twitter:title" content="Miradas 360 - 
-    Historias Inmersivas Colaborativas y Abiertas">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg">
-    <meta name="twitter:player" content="http://www.miradas360.com.ar">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:player" content="">
     <meta name="twitter:player:width" content="600">
     <meta name="twitter:player:height" content="370">
     
-    <meta property="og:title" content="Miradas 360 - 
-    Historias Inmersivas Colaborativas y Abiertas">
-    <meta property="og:url"  content="http://www.miradas360.com.ar">
+    <meta property="og:title" content="">
+    <meta property="og:url"  content="">
     <meta property="og:description" content="" />
     <meta property="og:type" content="video" />
     <meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg" />
     <meta property="og:image:seucre_url" content="https://cdn-images-1.medium.com/max/1600/1*YX3nD8Xj371B0mr3z4jeJA.jpeg" />
      
-    <meta name="description" content="Explorá lugares que merecen ser vistos, explorados y atravesados por una historia.">
-    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <meta name="description" content="">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
      <!-- <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>  -->
     <script src="scripts/aframe-look-at-component.min.js"></script>
@@ -162,6 +159,23 @@ a.button, button{
       <a-sky id="image-360" radius="10" src="#scene01" color="white"></a-sky>
       <!-- Miradas Logo -->
       
+     
+       <a-entity class="teleport" id="teleport-01-12" look-at="[camera]" position="-4 0 -0.6" rotation="0 0 4" scale="1.25 1.25 1.25"
+      template="src: #link" data-src="#scene12" data-thumb="12-01,12-15"
+      ></a-entity>
+
+      <a-entity class="teleport" id="teleport-12-15" look-at="[camera]" position="-6 0 0" rotation="0 0 4" scale="1.25 1.25 1.25"
+      template="src: #link" data-src="#scene15" data-thumb="15-12"
+      ></a-entity>
+
+       <a-entity class="teleport" id="teleport-12-01" look-at="[camera]" position="4 0 -4" rotation="0 0 4" scale="1.25 1.25 1.25"
+      template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03,01-12"
+      ></a-entity>
+
+       <a-entity class="teleport" id="teleport-15-12" look-at="[camera]" position="4 1 1" rotation="0 0 4" scale="1.25 1.25 1.25"
+      template="src: #link" data-src="#scene12" data-thumb="12-01,12-15"
+      ></a-entity>
+
       <a-entity class="teleport" id="teleport-01-07" look-at="[camera]" position="-0.5 0 5" rotation="0 0 4" scale="1.25 1.25 1.25"
       template="src: #link" data-src="#scene07" data-thumb="07-09,07-10,07-01"
       ></a-entity>
@@ -175,7 +189,7 @@ a.button, button{
       ></a-entity>
 
        <a-entity class="teleport" id="teleport-03-01" look-at="[camera]" position="-3 0 -1.5" rotation="0 0 0" scale="2 2 2"
-      template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03"
+      template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03,01-12"
       ></a-entity>
 
         <a-entity class="teleport" id="teleport-03-05" look-at="[camera]" position="5 0 0" rotation="0 0 0" scale="1.5 1.5 1.5"
@@ -206,7 +220,7 @@ a.button, button{
       template="src: #link" data-src="#scene09" data-thumb="09-07"></a-entity>
       
        <a-entity class="teleport" id="teleport-07-01" look-at="[camera]" position="0.25 0 5.5" rotation="0 0 0" scale="1.5 1.5 1.5" 
-       template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03"></a-entity>
+       template="src: #link" data-src="#scene01" data-thumb="01-07,01-06,01-03,01-12"></a-entity>
       
       <a-entity class="teleport" id="teleport-07-10" look-at="[camera]" position="-1 0 -7" rotation="0 0 0" scale="1.5 1.5 1.5"
       template="src: #link" data-src="#scene10" data-thumb="10-07,10-11"></a-entity>
